@@ -9,7 +9,7 @@ const neo4j = require('neo4j-driver').v1;
 
 const app = express();
 
-const driver = neo4j.driver('bolt://localhost', neo4j.auth.basic('neo4j', 'pizza'));
+const driver = neo4j.driver('bolt://localhost', neo4j.auth.basic('neo4j', 'neo4j'));
 const session = driver.session();
 
 // Parsers for POST data
